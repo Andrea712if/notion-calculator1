@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    <div class="display">
+      <input type="text" id="screen" value="0" readonly />
+    </div>
+
+    <div class="keys" id="keys">
+      <!-- fila 1 -->
+      <button class="accent" data-action="lpar">(</button>
+      <button class="accent" data-action="rpar">)</button>
+      <div class="empty"></div>
+      <button class="danger" data-action="clear">AC</button>
+
+      <!-- fila 2 -->
+      <button class="accent" data-action="pow">x^</button>
+      <button data-value="7">7</button>
+      <button data-value="8">8</button>
+      <button data-value="9">9</button>
+      <button class="accent" data-value="*">×</button>
+
+      <!-- fila 3 -->
+      <button class="accent" data-action="percent">%</button>
+      <button data-value="4">4</button>
+      <button data-value="5">5</button>
+      <button data-value="6">6</button>
+      <button class="accent" data-value="/">÷</button>
+
+      <!-- fila 4 -->
+      <button class="accent" data-action="sqrt">√</button>
+      <button data-value="1">1</button>
+      <button data-value="2">2</button>
+      <button data-value="3">3</button>
+      <button class="accent" data-value="-">−</button>
+
+      <!-- fila 5 -->
+      <div class="empty"></div>
+      <button class="accent" data-value=".">.</button>
+      <button data-value="0">0</button>
+      <button class="accent" data-action="equals">=</button>
+      <button class="accent" data-value="+">+</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
